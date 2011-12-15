@@ -13,6 +13,7 @@
 		D3BC23EB149A672A00F9C99F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D3BC23E9149A672A00F9C99F /* Credits.rtf */; };
 		D3BC23EE149A672A00F9C99F /* SimpleBrowser2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC23ED149A672A00F9C99F /* SimpleBrowser2AppDelegate.m */; };
 		D3BC23F1149A672A00F9C99F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3BC23EF149A672A00F9C99F /* MainMenu.xib */; };
+		D3BC23F8149A6E0400F9C99F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BC23F7149A6E0400F9C99F /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +22,15 @@
 		D3BC23DD149A672A00F9C99F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D3BC23DE149A672A00F9C99F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D3BC23DF149A672A00F9C99F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D3BC23E2149A672A00F9C99F /* SimpleBrowser2-Info.plist */ = {isa = PBXFileReference; path = "SimpleBrowser2-Info.plist"; sourceTree = "<group>"; };
+		D3BC23E2149A672A00F9C99F /* SimpleBrowser2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleBrowser2-Info.plist"; sourceTree = "<group>"; };
 		D3BC23E4149A672A00F9C99F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3BC23E6149A672A00F9C99F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D3BC23E8149A672A00F9C99F /* SimpleBrowser2-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleBrowser2-Prefix.pch"; sourceTree = "<group>"; };
+		D3BC23E8149A672A00F9C99F /* SimpleBrowser2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleBrowser2-Prefix.pch"; sourceTree = "<group>"; };
 		D3BC23EA149A672A00F9C99F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		D3BC23EC149A672A00F9C99F /* SimpleBrowser2AppDelegate.h */ = {isa = PBXFileReference; path = SimpleBrowser2AppDelegate.h; sourceTree = "<group>"; };
+		D3BC23EC149A672A00F9C99F /* SimpleBrowser2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBrowser2AppDelegate.h; sourceTree = "<group>"; };
 		D3BC23ED149A672A00F9C99F /* SimpleBrowser2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBrowser2AppDelegate.m; sourceTree = "<group>"; };
 		D3BC23F0149A672A00F9C99F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D3BC23F7149A6E0400F9C99F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BC23F8149A6E0400F9C99F /* WebKit.framework in Frameworks */,
 				D3BC23DB149A672A00F9C99F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +66,7 @@
 		D3BC23D9149A672A00F9C99F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3BC23F7149A6E0400F9C99F /* WebKit.framework */,
 				D3BC23DA149A672A00F9C99F /* Cocoa.framework */,
 				D3BC23DC149A672A00F9C99F /* Other Frameworks */,
 			);
@@ -241,6 +245,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
